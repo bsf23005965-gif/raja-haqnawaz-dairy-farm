@@ -1,0 +1,6 @@
+{
+  "name": "Raja Haqnawaz Dairy Farm",
+  "description": "Official management and online livestock selling system for Raja Haqnawaz Dairy Farm featuring 30+ years of experience, livestock marketplace, Google Search grounded live dairy market trends, AI assistant, and farm administration.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

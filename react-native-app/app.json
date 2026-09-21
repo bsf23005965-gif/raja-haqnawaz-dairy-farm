@@ -1,0 +1,25 @@
+{
+  "expo": {
+    "name": "Raja Haqnawaz Dairy Farm",
+    "slug": "raja-haqnawaz-dairy-farm",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.rajahaqnawaz.dairyfarm"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#121212"
+      },
+      "package": "com.rajahaqnawaz.dairyfarm"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    }
+  }
+}
