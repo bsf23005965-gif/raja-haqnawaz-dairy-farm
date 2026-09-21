@@ -101,7 +101,7 @@ export default function Header({ onNavigate, activeScreen }) {
             <div className="relative w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-br from-amber-500 via-emerald-600 to-green-800 p-0.5 shadow-lg shadow-emerald-950/40 shrink-0">
               <div className="w-full h-full rounded-[10px] bg-neutral-900 flex items-center justify-center overflow-hidden">
                 <img
-                  src={branding.logo || '/farm_logo.jpg'}
+                  src={branding.logo || '/raja-haqnawaz-dairy-farm/farm_logo.jpg'}
                   alt="Raja Haqnawaz Dairy Farm Logo"
                   className="w-full h-full object-cover object-top"
                   onError={(e) => {

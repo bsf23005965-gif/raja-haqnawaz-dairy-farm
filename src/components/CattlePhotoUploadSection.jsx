@@ -66,15 +66,15 @@ export default function CattlePhotoUploadSection({
 
   // Pre-fill with Raja Haqnawaz farm verified inspection images for this breed
   const handleLoadSamplePhotos = () => {
-    const mainPhoto = BREED_DEFAULT_PHOTOS[breed] || BREED_DEFAULT_PHOTOS[type] || '/assets/cattle/sahiwal_body.jpg';
+    const mainPhoto = BREED_DEFAULT_PHOTOS[breed] || BREED_DEFAULT_PHOTOS[type] || '/raja-haqnawaz-dairy-farm/assets/cattle/sahiwal_body.jpg';
     const isMale = gender === 'Male' || type === 'Bull';
 
     onChange({
-      face: '/assets/cattle/cow_face.jpg',
+      face: '/raja-haqnawaz-dairy-farm/assets/cattle/cow_face.jpg',
       body: mainPhoto,
-      udder: isMale ? mainPhoto : '/assets/cattle/cow_udder.jpg',
-      rear: '/assets/cattle/cow_rear.jpg',
-      legs: '/assets/cattle/cow_legs.jpg'
+      udder: isMale ? mainPhoto : '/raja-haqnawaz-dairy-farm/assets/cattle/cow_udder.jpg',
+      rear: '/raja-haqnawaz-dairy-farm/assets/cattle/cow_rear.jpg',
+      legs: '/raja-haqnawaz-dairy-farm/assets/cattle/cow_legs.jpg'
     });
   };
 

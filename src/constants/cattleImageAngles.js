@@ -8,7 +8,7 @@ export const ANGLE_CONFIG = [
     urduLabel: 'چہرہ اور منہ (Face)',
     description: 'Frontal muzzle, eyes, ears & horn confirmation',
     required: false,
-    defaultFallback: '/assets/cattle/cow_face.jpg'
+    defaultFallback: '/raja-haqnawaz-dairy-farm/assets/cattle/cow_face.jpg'
   },
   {
     key: 'body',
@@ -16,7 +16,7 @@ export const ANGLE_CONFIG = [
     urduLabel: 'سائیڈ ویو - مکمل جسم (Body)',
     description: 'Full side profile showing frame, length, coat & dewlap',
     required: true,
-    defaultFallback: '/assets/cattle/sahiwal_body.jpg'
+    defaultFallback: '/raja-haqnawaz-dairy-farm/assets/cattle/sahiwal_body.jpg'
   },
   {
     key: 'udder',
@@ -24,7 +24,7 @@ export const ANGLE_CONFIG = [
     urduLabel: 'حیوانہ، تھن اور چھاتی (Breast)',
     description: 'Mammary development, teat symmetry, spacing & milk veins',
     required: false,
-    defaultFallback: '/assets/cattle/cow_udder.jpg'
+    defaultFallback: '/raja-haqnawaz-dairy-farm/assets/cattle/cow_udder.jpg'
   },
   {
     key: 'rear',
@@ -32,7 +32,7 @@ export const ANGLE_CONFIG = [
     urduLabel: 'پشت اور چوڑائی (Rear)',
     description: 'Pelvic width, rump angle, and rear udder attachment',
     required: false,
-    defaultFallback: '/assets/cattle/cow_rear.jpg'
+    defaultFallback: '/raja-haqnawaz-dairy-farm/assets/cattle/cow_rear.jpg'
   },
   {
     key: 'legs',
@@ -40,20 +40,20 @@ export const ANGLE_CONFIG = [
     urduLabel: 'ٹانگیں اور کھر (Legs)',
     description: 'Sound hooves, hocks, strong bone structure & stance',
     required: false,
-    defaultFallback: '/assets/cattle/cow_legs.jpg'
+    defaultFallback: '/raja-haqnawaz-dairy-farm/assets/cattle/cow_legs.jpg'
   }
 ];
 
 export const BREED_DEFAULT_PHOTOS = {
-  Sahiwal: '/assets/cattle/sahiwal_body.jpg',
-  'Nili Ravi': '/assets/cattle/nili_ravi_buffalo.jpg',
-  Cholistani: '/assets/cattle/cholistani_cow.jpg',
-  'Red Sindhi': '/assets/cattle/red_sindhi_cow.jpg',
-  'Holstein Friesian': '/assets/cattle/cross_dairy_cow.jpg',
-  Jersey: '/assets/cattle/cross_dairy_cow.jpg',
-  'Cross Breed': '/assets/cattle/cross_dairy_cow.jpg',
-  Bull: '/assets/cattle/sahiwal_bull.jpg',
-  Calf: '/assets/cattle/dairy_calf.jpg'
+  Sahiwal: '/raja-haqnawaz-dairy-farm/assets/cattle/sahiwal_body.jpg',
+  'Nili Ravi': '/raja-haqnawaz-dairy-farm/assets/cattle/nili_ravi_buffalo.jpg',
+  Cholistani: '/raja-haqnawaz-dairy-farm/assets/cattle/cholistani_cow.jpg',
+  'Red Sindhi': '/raja-haqnawaz-dairy-farm/assets/cattle/red_sindhi_cow.jpg',
+  'Holstein Friesian': '/raja-haqnawaz-dairy-farm/assets/cattle/cross_dairy_cow.jpg',
+  Jersey: '/raja-haqnawaz-dairy-farm/assets/cattle/cross_dairy_cow.jpg',
+  'Cross Breed': '/raja-haqnawaz-dairy-farm/assets/cattle/cross_dairy_cow.jpg',
+  Bull: '/raja-haqnawaz-dairy-farm/assets/cattle/sahiwal_bull.jpg',
+  Calf: '/raja-haqnawaz-dairy-farm/assets/cattle/dairy_calf.jpg'
 };
 
 /**
@@ -76,7 +76,7 @@ export function isInvalidCattleImage(url) {
  * Returns an authentic breed-specific fallback photo for any cattle
  */
 export function getSanitizedCattlePhoto(animal) {
-  if (!animal) return '/assets/cattle/sahiwal_body.jpg';
+  if (!animal) return '/raja-haqnawaz-dairy-farm/assets/cattle/sahiwal_body.jpg';
   
   if (animal.imageUrl && !isInvalidCattleImage(animal.imageUrl)) {
     return animal.imageUrl;
@@ -111,7 +111,7 @@ export function getAnimalInspectionGallery(animal) {
       label: 'Face & Head',
       urduLabel: 'چہرہ اور منہ',
       url: (!isInvalidCattleImage(customAngles.face) && customAngles.face) 
-           || '/assets/cattle/cow_face.jpg',
+           || '/raja-haqnawaz-dairy-farm/assets/cattle/cow_face.jpg',
       description: 'Clear facial confirmation, eyes, muzzle and breed horns'
     },
     {
@@ -128,7 +128,7 @@ export function getAnimalInspectionGallery(animal) {
       urduLabel: isMale ? 'خصیہ اور پیٹ' : 'حیوانہ اور تھن',
       url: (!isInvalidCattleImage(customAngles.udder) && customAngles.udder) 
            || (!isInvalidCattleImage(customAngles.breast) && customAngles.breast)
-           || (isMale ? mainPhoto : '/assets/cattle/cow_udder.jpg'),
+           || (isMale ? mainPhoto : '/raja-haqnawaz-dairy-farm/assets/cattle/cow_udder.jpg'),
       description: isMale 
         ? 'Breeding stud underbelly, testicles & sheath development'
         : 'Capacity, square teat placement, fore and rear udder attachment'
@@ -138,7 +138,7 @@ export function getAnimalInspectionGallery(animal) {
       label: 'Rear & Pelvis',
       urduLabel: 'پشت اور چوڑائی',
       url: (!isInvalidCattleImage(customAngles.rear) && customAngles.rear) 
-           || '/assets/cattle/cow_rear.jpg',
+           || '/raja-haqnawaz-dairy-farm/assets/cattle/cow_rear.jpg',
       description: 'Rump width, pin bone spacing and pelvis strength'
     },
     {
@@ -146,7 +146,7 @@ export function getAnimalInspectionGallery(animal) {
       label: 'Legs & Stature',
       urduLabel: 'ٹانگیں اور پاؤں',
       url: (!isInvalidCattleImage(customAngles.legs) && customAngles.legs) 
-           || '/assets/cattle/cow_legs.jpg',
+           || '/raja-haqnawaz-dairy-farm/assets/cattle/cow_legs.jpg',
       description: 'Hoof condition, upright pasterns, and clean joints'
     }
   ];

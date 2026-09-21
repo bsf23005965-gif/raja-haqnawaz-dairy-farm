@@ -21,7 +21,7 @@ export const useAdminStore = create((set, get) => {
   let initialBranding = savedSettings?.branding ? { ...BRANDING, ...savedSettings.branding } : { ...BRANDING };
   initialBranding.founderPhoto = BRANDING.founderPhoto;
   initialBranding.officialPhotoSource = BRANDING.officialPhotoSource;
-  if (!initialBranding.fallbackPhoto || initialBranding.fallbackPhoto.includes('unsplash') || initialBranding.fallbackPhoto === '/farm_logo.jpg') {
+  if (!initialBranding.fallbackPhoto || initialBranding.fallbackPhoto.includes('unsplash') || initialBranding.fallbackPhoto === '/raja-haqnawaz-dairy-farm/farm_logo.jpg') {
     initialBranding.fallbackPhoto = BRANDING.fallbackPhoto;
   }
   if (!initialBranding.logo) {

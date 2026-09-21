@@ -97,7 +97,7 @@ export default function FeaturedLivestock({ onNavigate, title, subtitle }) {
                   className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
                   loading="lazy"
                   onError={(e) => {
-                    e.target.src = '/farm_logo.jpg';
+                    e.target.src = '/raja-haqnawaz-dairy-farm/farm_logo.jpg';
                   }}
                 />
                 

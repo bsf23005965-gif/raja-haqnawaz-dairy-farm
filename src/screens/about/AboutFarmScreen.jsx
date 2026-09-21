@@ -78,11 +78,11 @@ export default function AboutFarmScreen({ onNavigate }) {
               {/* Full Complete Photo Display */}
               <div className="w-full bg-neutral-950 flex items-center justify-center p-2 sm:p-3">
                 <img
-                  src="/raja_haqnawaz.jpg"
+                  src="/raja-haqnawaz-dairy-farm/raja_haqnawaz.jpg"
                   alt="Raja Haqnawaz - Founder & Patron of Raja Haqnawaz Dairy Farm"
                   className="w-full h-auto max-h-[520px] object-contain rounded-2xl transition-transform duration-500 group-hover:scale-[1.02]"
                   onError={(e) => {
-                    e.target.src = '/farm_logo.jpg';
+                    e.target.src = '/raja-haqnawaz-dairy-farm/farm_logo.jpg';
                   }}
                 />
               </div>

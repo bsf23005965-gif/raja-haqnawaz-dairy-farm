@@ -42,7 +42,7 @@ export default function CattleAngleGalleryViewer({ animal }) {
           className="w-full h-full object-cover transition-all duration-300 cursor-pointer"
           onClick={() => setIsModalOpen(true)}
           onError={(e) => {
-            e.target.src = '/assets/cattle/sahiwal_body.jpg';
+            e.target.src = '/raja-haqnawaz-dairy-farm/assets/cattle/sahiwal_body.jpg';
           }}
         />
 
@@ -143,7 +143,7 @@ export default function CattleAngleGalleryViewer({ animal }) {
                   alt={item.label}
                   className="w-full h-full object-cover"
                   onError={(e) => {
-                    e.target.src = '/assets/cattle/sahiwal_body.jpg';
+                    e.target.src = '/raja-haqnawaz-dairy-farm/assets/cattle/sahiwal_body.jpg';
                   }}
                 />
                 <div className={`absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent ${isSelected ? 'opacity-80' : 'opacity-60'}`} />

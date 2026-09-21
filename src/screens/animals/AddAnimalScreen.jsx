@@ -110,13 +110,13 @@ export default function AddAnimalScreen({ onNavigate }) {
 
   // Load verified farm sample photos if user wants quick autofill
   const handleLoadSamplePhotos = () => {
-    const defaultBody = BREED_DEFAULT_PHOTOS[form.breed] || '/assets/cattle/sahiwal_body.jpg';
+    const defaultBody = BREED_DEFAULT_PHOTOS[form.breed] || '/raja-haqnawaz-dairy-farm/assets/cattle/sahiwal_body.jpg';
     setAngles({
-      face: '/assets/cattle/cow_face.jpg',
+      face: '/raja-haqnawaz-dairy-farm/assets/cattle/cow_face.jpg',
       body: defaultBody,
-      udder: '/assets/cattle/cow_udder.jpg',
-      rear: '/assets/cattle/cow_rear.jpg',
-      legs: '/assets/cattle/cow_legs.jpg'
+      udder: '/raja-haqnawaz-dairy-farm/assets/cattle/cow_udder.jpg',
+      rear: '/raja-haqnawaz-dairy-farm/assets/cattle/cow_rear.jpg',
+      legs: '/raja-haqnawaz-dairy-farm/assets/cattle/cow_legs.jpg'
     });
     setErrorMsg('');
   };
@@ -133,16 +133,16 @@ export default function AddAnimalScreen({ onNavigate }) {
     }
 
     // Check if at least body or face photo is uploaded
-    const mainPhoto = angles.body || angles.face || angles.udder || BREED_DEFAULT_PHOTOS[form.breed] || '/assets/cattle/sahiwal_body.jpg';
+    const mainPhoto = angles.body || angles.face || angles.udder || BREED_DEFAULT_PHOTOS[form.breed] || '/raja-haqnawaz-dairy-farm/assets/cattle/sahiwal_body.jpg';
 
     setIsSubmitting(true);
 
     const finalAngles = {
-      face: angles.face || '/assets/cattle/cow_face.jpg',
+      face: angles.face || '/raja-haqnawaz-dairy-farm/assets/cattle/cow_face.jpg',
       body: angles.body || mainPhoto,
-      udder: angles.udder || '/assets/cattle/cow_udder.jpg',
-      rear: angles.rear || '/assets/cattle/cow_rear.jpg',
-      legs: angles.legs || '/assets/cattle/cow_legs.jpg'
+      udder: angles.udder || '/raja-haqnawaz-dairy-farm/assets/cattle/cow_udder.jpg',
+      rear: angles.rear || '/raja-haqnawaz-dairy-farm/assets/cattle/cow_rear.jpg',
+      legs: angles.legs || '/raja-haqnawaz-dairy-farm/assets/cattle/cow_legs.jpg'
     };
 
     const newAnimalData = {

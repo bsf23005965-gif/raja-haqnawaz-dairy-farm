@@ -173,7 +173,7 @@ export default function HomeScreen({ onNavigate }) {
           <div className="lg:col-span-5">
             <div className="relative rounded-2xl overflow-hidden border border-emerald-500/30 bg-neutral-950 shadow-2xl">
               <img
-                src="/assets/cattle/sahiwal_body.jpg"
+                src="/raja-haqnawaz-dairy-farm/assets/cattle/sahiwal_body.jpg"
                 alt="Raja Haqnawaz Dairy Farm Sahiwal Cattle"
                 className="w-full h-52 sm:h-60 object-cover hover:scale-105 transition-transform duration-500"
               />

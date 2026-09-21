@@ -71,7 +71,7 @@ export default function Footer({ onNavigate }) {
             <div className="flex items-center gap-3">
               <div className="w-12 h-12 rounded-2xl overflow-hidden border-2 border-emerald-500/50 bg-neutral-950 shrink-0">
                 <img
-                  src="/farm_logo.jpg"
+                  src="/raja-haqnawaz-dairy-farm/farm_logo.jpg"
                   alt="Raja Haqnawaz Dairy Farm"
                   className="w-full h-full object-cover object-top"
                 />

@@ -22,11 +22,11 @@ export const useAnimalStore = create((set, get) => {
     const angles = animal.angles && !isInvalidCattleImage(animal.angles.body)
       ? animal.angles
       : {
-          face: gallery.find(g => g.key === 'face')?.url || '/assets/cattle/cow_face.jpg',
+          face: gallery.find(g => g.key === 'face')?.url || '/raja-haqnawaz-dairy-farm/assets/cattle/cow_face.jpg',
           body: sanitizedUrl,
-          udder: gallery.find(g => g.key === 'udder')?.url || '/assets/cattle/cow_udder.jpg',
-          rear: gallery.find(g => g.key === 'rear')?.url || '/assets/cattle/cow_rear.jpg',
-          legs: gallery.find(g => g.key === 'legs')?.url || '/assets/cattle/cow_legs.jpg',
+          udder: gallery.find(g => g.key === 'udder')?.url || '/raja-haqnawaz-dairy-farm/assets/cattle/cow_udder.jpg',
+          rear: gallery.find(g => g.key === 'rear')?.url || '/raja-haqnawaz-dairy-farm/assets/cattle/cow_rear.jpg',
+          legs: gallery.find(g => g.key === 'legs')?.url || '/raja-haqnawaz-dairy-farm/assets/cattle/cow_legs.jpg',
         };
 
     return {
@@ -210,11 +210,11 @@ export const useAnimalStore = create((set, get) => {
         id,
         imageUrl: mainPhoto,
         angles: newAnimal.angles || {
-          face: gallery.find(g => g.key === 'face')?.url || '/assets/cattle/cow_face.jpg',
+          face: gallery.find(g => g.key === 'face')?.url || '/raja-haqnawaz-dairy-farm/assets/cattle/cow_face.jpg',
           body: mainPhoto,
-          udder: gallery.find(g => g.key === 'udder')?.url || '/assets/cattle/cow_udder.jpg',
-          rear: gallery.find(g => g.key === 'rear')?.url || '/assets/cattle/cow_rear.jpg',
-          legs: gallery.find(g => g.key === 'legs')?.url || '/assets/cattle/cow_legs.jpg'
+          udder: gallery.find(g => g.key === 'udder')?.url || '/raja-haqnawaz-dairy-farm/assets/cattle/cow_udder.jpg',
+          rear: gallery.find(g => g.key === 'rear')?.url || '/raja-haqnawaz-dairy-farm/assets/cattle/cow_rear.jpg',
+          legs: gallery.find(g => g.key === 'legs')?.url || '/raja-haqnawaz-dairy-farm/assets/cattle/cow_legs.jpg'
         },
         images: gallery,
         availability: newAnimal.availability || 'Available',

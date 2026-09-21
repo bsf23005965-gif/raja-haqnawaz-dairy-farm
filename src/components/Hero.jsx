@@ -20,8 +20,8 @@ export default function Hero({
   totalAnimals = 33, 
   onNavigate 
 }) {
-  const farmHeroImage = branding?.farmHeroImage || BRANDING.farmHeroImage || '/farm_hero_banner.jpg';
-  const farmLogo = branding?.logo || BRANDING.logo || '/farm_logo.jpg';
+  const farmHeroImage = branding?.farmHeroImage || BRANDING.farmHeroImage || '/raja-haqnawaz-dairy-farm/farm_hero_banner.jpg';
+  const farmLogo = branding?.logo || BRANDING.logo || '/raja-haqnawaz-dairy-farm/farm_logo.jpg';
   const experienceText = branding?.experienceYears || '30+ Years of Experience';
 
   return (
@@ -72,7 +72,7 @@ export default function Hero({
                   alt="Raja Haqnawaz Dairy Farm Logo"
                   className="w-full h-full object-cover object-top"
                   onError={(e) => {
-                    e.target.src = '/farm_logo.jpg';
+                    e.target.src = '/raja-haqnawaz-dairy-farm/farm_logo.jpg';
                   }}
                 />
               </div>

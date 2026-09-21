@@ -70,13 +70,13 @@ export default function AdminDashboardScreen({ onNavigate }) {
     description: '',
     availability: 'Available',
     location: 'Raja Haqnawaz Dairy Farm, Naseem Colony, Jauharabad, Khushab',
-    imageUrl: '/assets/cattle/sahiwal_body.jpg',
+    imageUrl: '/raja-haqnawaz-dairy-farm/assets/cattle/sahiwal_body.jpg',
     angles: {
-      face: '/assets/cattle/cow_face.jpg',
-      body: '/assets/cattle/sahiwal_body.jpg',
-      udder: '/assets/cattle/cow_udder.jpg',
-      rear: '/assets/cattle/cow_rear.jpg',
-      legs: '/assets/cattle/cow_legs.jpg'
+      face: '/raja-haqnawaz-dairy-farm/assets/cattle/cow_face.jpg',
+      body: '/raja-haqnawaz-dairy-farm/assets/cattle/sahiwal_body.jpg',
+      udder: '/raja-haqnawaz-dairy-farm/assets/cattle/cow_udder.jpg',
+      rear: '/raja-haqnawaz-dairy-farm/assets/cattle/cow_rear.jpg',
+      legs: '/raja-haqnawaz-dairy-farm/assets/cattle/cow_legs.jpg'
     }
   });
 
@@ -98,7 +98,7 @@ export default function AdminDashboardScreen({ onNavigate }) {
       alert('Please enter animal name and price.');
       return;
     }
-    const primaryImg = newAnimal.angles?.body || newAnimal.angles?.face || newAnimal.imageUrl || '/assets/cattle/sahiwal_body.jpg';
+    const primaryImg = newAnimal.angles?.body || newAnimal.angles?.face || newAnimal.imageUrl || '/raja-haqnawaz-dairy-farm/assets/cattle/sahiwal_body.jpg';
     addAnimal({
       ...newAnimal,
       price: Number(newAnimal.price),

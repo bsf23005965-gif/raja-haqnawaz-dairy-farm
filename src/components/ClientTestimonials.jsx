@@ -165,7 +165,7 @@ export default function ClientTestimonials({ onNavigate }) {
                     className="w-full h-full object-cover"
                     loading="lazy"
                     onError={(e) => {
-                      e.target.src = '/farm_logo.jpg';
+                      e.target.src = '/raja-haqnawaz-dairy-farm/farm_logo.jpg';
                     }}
                   />
                 </div>
