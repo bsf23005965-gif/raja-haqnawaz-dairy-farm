@@ -9,12 +9,17 @@ const __dirname = path.dirname(__filename);
 
 export default defineConfig(() => {
   return {
+    // GitHub Pages repository path
+    base: '/raja-haqnawaz-dairy-farm/',
+
     plugins: [react(), tailwindcss()],
+
     resolve: {
       alias: {
         '@': path.resolve(__dirname, './src'),
       },
     },
+
     server: {
       hmr: process.env.DISABLE_HMR !== 'true',
       watch: process.env.DISABLE_HMR === 'true' ? null : {},
