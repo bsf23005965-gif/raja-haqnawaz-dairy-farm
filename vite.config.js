@@ -9,7 +9,6 @@ const __dirname = path.dirname(__filename);
 
 export default defineConfig(() => {
   return {
-    // GitHub Pages repository path
     base: '/raja-haqnawaz-dairy-farm/',
 
     plugins: [react(), tailwindcss()],
